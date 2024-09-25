@@ -1,0 +1,147 @@
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.min-banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+  color: rgb(14, 13, 13);
+  font-weight: 400;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.banner-text p {
+  font-size: 1rem;
+}
+
+/* Layout for the contact details and form */
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-content {
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.contact-info h3 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 70px;
+}
+
+
+/* Contact form styling */
+.contact-form {
+  width: 35%; 
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  margin: 10px;
+  padding: 5px;
+
+}
+
+.form-group input,
+.form-group textarea {
+  width: 90%; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.submit-btn {
+  background-color: rgba(184, 142, 47, 1);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 30%;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif; 
+
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+.success-message {
+  font-size: 1.35em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 700px) {
+  /* Responsive design for mobile */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details,
+  .contact-form {
+    width: 100%; 
+  }
+}
+
